@@ -3,125 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ricerca sui gatti neri</title>
+  <title>Gatti Neri — Storia, genetica e curiosità</title>
   <style>
-    body{font-family:system-ui,Arial,Helvetica,sans-serif;margin:2rem;color:#111}
-    h1{margin-bottom:0.2rem}
-    .gallery{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
-    .card{max-width:320px}
-    img{width:100%;height:auto;border-radius:8px;display:block}
-    .caption{font-size:0.9rem;color:#444;margin-top:0.3rem}
-    footer{margin-top:2rem;font-size:0.9rem;color:#666}
+    :root{--bg1:#ff6ec7;--bg2:#6effc1;--accent:#0b0b0b;--neon:#00f0ff;--muted:#f3f7f9}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Arial,Helvetica,sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--accent);min-height:100vh}
+    .wrap{max-width:1100px;margin:2rem auto;padding:2rem;background:rgba(255,255,255,0.04);border-radius:14px;backdrop-filter:blur(6px)}
+    header{display:flex;align-items:center;gap:1rem}
+    h1{margin:0;color:#fff;text-shadow:0 3px 10px rgba(0,0,0,0.25)}
+    .lead{color:var(--muted);margin-top:.5rem}
+    nav{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+    .btn{background:rgba(255,255,255,0.08);color:#fff;padding:.4rem .8rem;border-radius:999px;border:1px solid rgba(255,255,255,0.06)}
+    section{margin-top:1.4rem;padding:1rem;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.02));border:1px solid rgba(255,255,255,0.03)}
+    h2{color:#fff;margin:0 0 .4rem 0}
+    h3{color:var(--neon);margin:0 0 .4rem 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem}
+    .card{background:rgba(255,255,255,0.03);padding:1rem;border-radius:10px}
+    img{width:100%;height:200px;object-fit:cover;border-radius:8px;display:block}
+    .caption{font-size:0.9rem;color:var(--muted);margin-top:.4rem}
+    footer{margin-top:1.6rem;color:rgba(255,255,255,0.9);text-align:center}
+    @media (max-width:600px){.wrap{margin:1rem;padding:1rem}}
   </style>
 </head>
 <body>
-  <h1>Gatti neri: miti, fatti e immagini</h1>
-  <p>Questa pagina raccoglie informazioni sintetiche sui gatti neri e alcune foto per mostrarne la bellezza.</p>
-
-  <section>
-    <h2>Origini e storia</h2>
-
-    <h3>Provenienza e origine biologica</h3>
-    <p>I gatti neri non costituiscono una razza a sé stante: il pelo nero è causato da varianti genetiche che aumentano la produzione di melanina. Queste varianti si trovano in molte popolazioni feline domestiche e selvatiche nel mondo. I gatti domestici discendono principalmente dal gatto selvatico africano (Felis silvestris lybica) e si sono diffusi insieme all'uomo, portando con sé anche fenotipi come il manto nero in regioni diverse.</p>
-
-    <!doctype html>
-    <html lang="it">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Gatti Neri — Colori Vivaci</title>
-      <style>
-        :root{
-          --bg1:#ff6ec7; --bg2:#6effc1; --accent:#1a1a1a; --card:#fff5; --glass:rgba(255,255,255,0.08);
-          --neon:#00f0ff; --muted:rgba(255,255,255,0.85)
-        }
-        *{box-sizing:border-box}
-        body{margin:0;font-family:Inter, Roboto, Arial, sans-serif;color:var(--accent);background:linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh}
-        .wrap{max-width:1100px;margin:2rem auto;padding:2rem;background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(0,0,0,0.04));border-radius:16px;backdrop-filter:blur(6px);box-shadow:0 10px 30px rgba(0,0,0,0.12)}
-        header{display:flex;align-items:center;gap:1rem}
-        h1{margin:0;font-size:clamp(1.6rem,3vw,2.6rem);color:#fff;text-shadow:0 2px 10px rgba(0,0,0,0.3)}
-        .tag{background:var(--neon);color:#001;padding:0.3rem 0.6rem;border-radius:999px;font-weight:600;font-size:0.9rem}
-        p.lead{color:var(--muted);margin-top:0.6rem}
-
-        nav{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
-        .btn{padding:.5rem .9rem;border-radius:999px;background:var(--glass);color:#fff;border:1px solid rgba(255,255,255,0.08);cursor:pointer}
-
-        section{margin-top:1.6rem;padding:1rem;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(0,0,0,0.02));border:1px solid rgba(255,255,255,0.03)}
-        h2{color:#fff;margin-top:0}
-        h3{color:var(--neon);margin-bottom:.3rem}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem}
-
-        .card{background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(0,0,0,0.02));padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.04)}
-        img{width:100%;height:200px;object-fit:cover;border-radius:8px;display:block;margin-bottom:.6rem}
-        .caption{font-size:0.85rem;color:var(--muted)}
-
-        footer{margin-top:2rem;color:rgba(255,255,255,0.8);font-size:0.9rem;text-align:center}
-
-        @media (max-width:600px){body{margin:1rem} .wrap{padding:1rem}}
-      </style>
-    </head>
-    <body>
-      <div class="wrap">
-        <header>
-          <div class="logo">
-            <div class="tag">GATTI</div>
-          </div>
-          <div>
-            <h1>Gatti neri: origini, storia e curiosità</h1>
-            <p class="lead">Un sito colorato che racconta la bellezza e la storia dei gatti neri, tra mito e realtà.</p>
-          </div>
-        </header>
-
-        <nav>
-          <button class="btn">Origini</button>
-          <button class="btn">Storia</button>
-          <button class="btn">Cura</button>
-          <button class="btn">Foto</button>
-        </nav>
-
-        <section id="origini">
-          <h2>Provenienza e genetica</h2>
-          <h3>Da dove vengono i gatti neri?</h3>
-          <p>I gatti neri non rappresentano una singola razza: il manto scuro deriva da varianti genetiche che aumentano la produzione di melanina. Queste varianti sono presenti in molte popolazioni feline in tutto il mondo. I gatti domestici discendono principalmente dal gatto selvatico africano, e il fenotipo nero è apparso e si è diffuso con l'uomo durante la domesticazione.</p>
-          <h3>Genetica in breve</h3>
-          <p>Il colore nero è spesso determinato dall'allele dominante per la melanina concentrata; esistono anche varianti che danno sfumature come il "black smoke" o il nero con riflessi. Il colore non determina temperamento o salute.</p>
-        </section>
-
-        <section id="storia">
-          <h2>Storia culturale</h2>
-          <h3>Antichità</h3>
-          <p>In antiche civiltà, come l'Egitto, i gatti (anche scuri) erano associati a divinità e spesso protetti. In alcune tradizioni asiatiche e marinare, il gatto nero è simbolo di buona sorte.</p>
-          <h3>Medioevo e superstizione</h3>
-          <p>Durante il Medioevo europeo si consolidò l'associazione tra gatto nero e stregoneria, portando a pregiudizi e persecuzioni. Tali credenze variano ancora oggi a seconda della cultura.</p>
-        </section>
-
-        <section id="cura">
-          <h2>Cura e adozione</h2>
-          <p>Non esistono cure speciali per i gatti neri rispetto ad altri: alimentazione equilibrata, vaccinazioni, sterilizzazione e affetto sono ciò che conta. I rifugi spesso segnalano che i gatti neri vengono adottati meno facilmente: adotta, salva una vita!</p>
-        </section>
-
-        <section id="foto">
-          <h2>Galleria</h2>
-          <div class="grid">
-            <div class="card">
-              <img src="https://source.unsplash.com/600x400/?black-cat&sig=11" alt="Gatto nero 1">
-              <div class="caption">Fonte: Unsplash — ricerca "black cat".</div>
-            </div>
-            <div class="card">
-              <img src="https://source.unsplash.com/600x400/?black-cat&sig=12" alt="Gatto nero 2">
-              <div class="caption">Fonte: Unsplash — ricerca "black cat".</div>
-            </div>
-            <div class="card">
-              <img src="https://source.unsplash.com/600x400/?black-cat&sig=13" alt="Gatto nero 3">
-              <div class="caption">Fonte: Unsplash — ricerca "black cat".</div>
-            </div>
-          </div>
-        </section>
-
-        <footer>
-          Ultimo aggiornamento: 2026-02-26 — Contatti: sito dimostrativo.
-        </footer>
+  <div class="wrap">
+    <header>
+      <div style="background:var(--neon);padding:.3rem .6rem;border-radius:8px;font-weight:700;color:#001">GATTI</div>
+      <div>
+        <h1>Gatti neri: storia, provenienza e curiosità</h1>
+        <p class="lead">Informazioni complete sui gatti neri: genetica, miti, cura e consigli per l'adozione.</p>
       </div>
-    </body>
-    </html> 
-pithon - m http.server 8000
+    </header>
+
+    <nav>
+      <button class="btn">Provenienza</button>
+      <button class="btn">Storia</button>
+      <button class="btn">Cura</button>
+      <button class="btn">Curiosità</button>
+    </nav>
+
+    <section id="provenienza">
+      <h2>Provenienza e genetica</h2>
+      <h3>Origine biologica</h3>
+      <p>I gatti neri non sono una razza distinta: il colore è il risultato di varianti genetiche che aumentano la produzione di melanina. Queste varianti possono essere trasmesse da genitori a cuccioli e si ritrovano in molte razze e popolazioni feline in tutto il mondo.</p>
+      <h3>Varianti di nero</h3>
+      <p>Esistono sfumature diverse: "solid black" (nero uniforme), "black smoke" (pelo scuro con radice più chiara) e riflessi blu/ramati dovuti ad altre combinazioni genetiche. Il gene `B` (per la melanina) e altre modificazioni influenzano il risultato finale.</p>
+    </section>
+
+    <section id="storia-culturale">
+      <h2>Storia culturale</h2>
+      <h3>Antichità e rispetto</h3>
+      <p>In molte civiltà antiche, come l'Egitto, i gatti erano venerati — anche quelli scuri — e considerati portatori di protezione. In Giappone e tra i marinai europei si diffusero credenze positive legate ai gatti neri.</p>
+      <h3>Medioevo e superstizioni</h3>
+      <p>In Europa medievale il gatto nero diventò simbolo di stregoneria: le leggende sulle trasformazioni delle streghe e sui "famigli" hanno alimentato paure che si sono propagate nei secoli successivi.</p>
+      <h3>Riscatto moderno</h3>
+      <p>Oggi molte organizzazioni lavorano per sfatare i miti e promuovere l'adozione. I gatti neri sono apprezzati per il loro aspetto elegante e il loro temperamento, identico a quello di gatti di altri colori.</p>
+    </section>
+
+    <section id="cura">
+      <h2>Salute e cura</h2>
+      <h3>Consigli pratici</h3>
+      <p>Alimentazione equilibrata, vaccini, sterilizzazione e controlli periodici dal veterinario sono le basi per tutti i gatti. Il pelo scuro può nascondere segni di parassiti o ferite, quindi ispezioni regolari sono utili.</p>
+      <h3>Comportamento</h3>
+      <p>Il colore non determina il carattere: affetto, curiosità e personalità dipendono da genetica complessiva, socializzazione e ambiente.</p>
+    </section>
+
+    <section id="adozione">
+      <h2>Adozione e consigli</h2>
+      <p>I rifugi spesso segnalano che i gatti neri restano più a lungo in cerca di casa a causa dei pregiudizi. Se pensi di adottare, considera questi punti: preparare casa, scegliere un veterinario, abituare il gatto gradualmente e offrirgli stimoli e gioco.</p>
+    </section>
+
+    <section id="curiosita">
+      <h2>Curiosità e miti sfatati</h2>
+      <ul>
+        <li>I gatti neri non portano sfortuna: è una superstizione culturale.</li>
+        <li>Non sono più aggressivi o meno affettuosi rispetto agli altri gatti.</li>
+        <li>In alcune culture, attraversare la strada con un gatto nero è considerato segno di buona fortuna.</li>
+      </ul>
+    </section>
+
+    <section id="galleria">
+      <h2>Galleria</h2>
+      <div class="grid">
+        <div class="card"><img src="https://source.unsplash.com/600x400/?black-cat&sig=21" alt="Gatto nero"><div class="caption">Fonte: Unsplash</div></div>
+        <div class="card"><img src="https://source.unsplash.com/600x400/?black-cat&sig=22" alt="Gatto nero"><div class="caption">Fonte: Unsplash</div></div>
+        <div class="card"><img src="https://source.unsplash.com/600x400/?black-cat&sig=23" alt="Gatto nero"><div class="caption">Fonte: Unsplash</div></div>
+      </div>
+    </section>
+
+    <footer>
+      Ultimo aggiornamento: 2026-02-26 — Contatti: sito dimostrativo.
+    </footer>
+  </div>
+</body>
+</html>
+          <p>Non esistono cure speciali per i gatti neri rispetto ad altri: alimentazione equilibrata, vaccinazioni, sterilizzazione e affetto sono ciò che conta. I rifugi spesso segnalano che i gatti neri vengono adottati meno facilmente: adotta, salva una vita!</p>
+
+        </section>
